@@ -29,6 +29,10 @@ import { TableComponent } from './table/table.component';
 
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { TreeComponent } from './tree/tree.component';
+import {MatTreeModule} from '@angular/material/tree';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +43,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     ProgressbarComponent,
     TabsComponent,
     TimepickerComponent,
-    TableComponent
+    TableComponent,
+    TreeComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +52,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule,
+    MatTreeModule,
+    MatButtonModule,
+    MatIconModule,
     AccordionModule.forRoot(),
     CarouselModule.forRoot(),
     BsDatepickerModule.forRoot(),
@@ -62,6 +70,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
       {path: 'tabs' , component: TabsComponent},
       {path: 'timepicker' , component: TimepickerComponent},
       {path: 'table' , component: TableComponent},
+      {path: 'tree' , component: TreeComponent},
     ])
   ],
   providers: [],
